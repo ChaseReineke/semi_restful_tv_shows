@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Info</title>
+</head>
+
+<body>
+    <a href="/">Back to All Shows</a>
+
+    <p>{{ show.title }}</p>
+    <p>{{ show.network }}</p>
+    <p>{{ show.release_date }}</p>
+    <p>{{ show.description }}</p>
+    <p>{{ show.updated_at }}</p>
+
+    <p><a href="/edit/{{show.id}}">Edit</a> | <a href="/delete/{{show.id}}">Delete</a></p>
+</body>
+
+</html>
